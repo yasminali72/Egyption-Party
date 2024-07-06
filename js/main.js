@@ -75,16 +75,11 @@ $('#Textarea').keyup(function(){
   if (message<100) {
     let letters=100-message
 $('#Contact span').text(`${letters}`)
-$('#Textarea').css({"box-shadow":"0 0 0 .25rem rgba(13, 110, 253, .25)"})
 
   }
-  else if(message===100){
-    $('#Contact span').text('your available character finished')
-    $('#Textarea').css({"box-shadow":"0 0 0 .25rem rgba(13, 253, 21, 0.25)"})
-  }
+  
  else{
   $('#Contact span').text('your available character finished')
-  $('#Textarea').css({"box-shadow":"0 0 0 .25rem  rgba(253, 13, 13, 0.25)"})
 
  }
 })
