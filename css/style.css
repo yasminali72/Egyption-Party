@@ -1,0 +1,151 @@
+:root{
+    --mainColor:#E68285;
+    --secColor:rgb(214 46 51 / 60%);
+    --thirdColor:#CCCCCC;
+}
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+color: #444;
+}
+
+#home{
+    width: 100%;
+    height: 660px;
+    background-image: url(../images/events-heavenly-header.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    box-shadow: inset 0 0 0 10000px rgb(214 46 51 / 60%);
+
+}
+/* .homeOverlay{
+    background-color:var(--secColor)
+} */
+
+.nav-link ,.close{
+    font-size: 25px;
+    padding: 20px 8px 20px 32px;
+    color: white;
+}
+.nav-link:hover {
+    color:var(--secColor)
+}
+.nav-link:focus{
+    color:var(--secColor)
+}
+.navbar-nav .nav-link.active{
+        color:var(--secColor)
+}
+.close:hover{
+    color:var(--secColor)
+}
+
+.menu{
+    position:fixed;
+    top: 0;
+    left: -250px;
+    z-index: 999;
+}
+
+.menuLeft{
+ 
+    width: 250px;
+}
+
+/************************************************** Duration **************************************/
+#Duration{
+    margin-top: 100px;
+margin-bottom: 100px;
+}
+#Duration .container{
+    background-color: var(--mainColor);
+}
+#Duration .container p{
+    background-color: var(--thirdColor);
+    color: black;
+}
+
+#Details {
+    min-height: 330px;
+    background-image: url(../images/invitation-2508607__340.jpg);
+    background-repeat: no-repeat;
+    object-fit: contain;
+background-size: 100% 100%;
+box-shadow: inset 0 0 0 2000px rgb(214 46 51 / 60%);
+
+
+}
+
+.day ,.hour , .min ,.sec{
+    border: 2px solid white;
+}
+
+/* ***************************************************contact******************************* */
+
+#Contact .icons a{
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #777777;
+    color:#777777;
+    margin-right: 7px;
+    
+}
+#Contact .icons a:hover{
+    background-color: #D62E33;
+    color: white;
+}
+#Contact button{
+    background-color: #D62E33;
+padding: 10px 20px;
+}
+
+.text{
+    color:#777
+}
+
+
+
+
+
+
+@media (min-width:640px) {
+   
+}
+@media (min-width:768px) {
+
+ 
+ 
+ 
+}
+
+@media (min-width:1024px) {
+    #home h1{
+        font-size: 60px;
+    }
+    #Duration .container{
+        width: 55%;
+    }
+    #Details .container {
+        padding: 0;
+        width: 78%;
+        transform: translateY(40%);
+    }
+    #Contact{
+        margin-top: 100px;
+        padding: 100px 0;
+    }
+    #Contact .container{
+        width: 78%;}
+    
+    
+}
+@media (min-width:1280px) {
+
+}
+
+
